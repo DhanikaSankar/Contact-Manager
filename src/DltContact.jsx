@@ -8,11 +8,8 @@ function DltContact() {
     
     const {contacts, setContacts} = useContext(userContext);
 
-    console.log(id);
-    console.log(contacts);
-
     useEffect(() => {
-        const newList = contacts.filter((item) => item.id !== parseInt(id));
+        const newList = contacts.filter((item,index) => index !== parseInt(id));
         setContacts(newList)
         nav('/')
     }, [id])
