@@ -18,8 +18,6 @@ function App() {
     axios.get("https://dummyjson.com/users").then((result) => setContacts(result.data.users));
   }, []);
 
-  console.log(contacts);
-
   return (
     <div >
       <userContext.Provider value={{contacts, setContacts}}>
