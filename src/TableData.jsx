@@ -49,7 +49,7 @@ function TableData() {
                   <MDBIcon far icon="edit"/></Button>
                     </Link>
 
-                  <Link to={`/delete/${contact.id}`}>
+                  <Link to={`/delete/${index}`}>
                     <Button><MDBIcon far icon="trash-alt"/></Button>
                   </Link>
 
