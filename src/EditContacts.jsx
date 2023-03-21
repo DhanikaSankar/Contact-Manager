@@ -11,15 +11,10 @@ function EditContacts() {
   let singleContact = contacts.contacts[id];
   const nav = useNavigate();
 
-  let address =singleContact.address.address,
-  state=singleContact.address.state,
-  city=singleContact.address.city;
+  let address = singleContact.address.address,
+      state   = singleContact.address.state,
+      city    = singleContact.address.city;
 
-  console.log(address);
-  console.log(state);
-  console.log(city);
-  
-  
   let [edit,setEdit] = useState({firstName:singleContact.firstName,lastName:singleContact.lastName,
     phone:singleContact.phone,email:singleContact.email,image:singleContact.image,address:address,
     state:state,city:city
